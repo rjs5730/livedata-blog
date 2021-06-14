@@ -1,43 +1,47 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
-  pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  url: 'https://rjs5730.github.io/livedata-blog/',
+  pathPrefix: '/livedata-blog',
+  title: 'Seunhyun blog',
+  subtitle: `웹 프론트 개발자.
+  ps. 노력과 성공은 정비례
+        아는만큼 보인다.`,
   copyright: '© All rights reserved.',
-  disqusShortname: '',
-  postsPerPage: 4,
+  disqusShortname: 'livedata-1',
+  postsPerPage: 5,
   googleAnalyticsId: 'UA-73379983-2',
   useKatex: false,
   menu: [
     {
-      label: 'Articles',
+      label: 'Posts',
       path: '/'
     },
     {
-      label: 'About me',
+      label: 'My Info',
       path: '/pages/about'
     },
-    {
-      label: 'Contact me',
-      path: '/pages/contacts'
-    }
+    // {
+    //   label: 'Contact me',
+    //   path: '/pages/contacts'
+    // }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'Oh Seung-hyun',
+    photo: '/photo.png',
+    bio: `웹 프론트 개발자.
+ps. 노력과 성공은 정비례
+      아는만큼 보인다.`,
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      email: 'rjs5730@naver.com',
+      facebook: '',
+      telegram: '',
+      twitter: '',
+      github: 'github.com/rjs5730',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: '',
+      instagram: '',
       line: '',
       gitlab: '',
       weibo: '',
