@@ -4,18 +4,14 @@ template: "page"
 socialImage: "/media/my-image-1.png"
 ---
 
-<figure class="float-left" style="width: 200px; padding: 0 0 10px 0 ">
-	<img src="/media/my-image-1.png"  alt="my-picture">
-	<figcaption>코엑스 전시회 중</figcaption>
+<figure class="float-left" style="display:flex; max-width:30rem; padding: 0 0 10px 0 ">
+    <div style="width:40%">
+        <img src="/media/my-image-1.png"  alt="my-picture">
+        <figcaption>코엑스 전시회 중</figcaption>
+    </div>
+    <span style="width:60%; margin-left: 20px; font-size:20px; font-weight:bold; line-height:1.8;">
+ 🧑🏻‍💻<br>배우는 것을 좋아하는 <br> 개발자 오승현입니다.</span>
   </figure>
-
-**노력하는 개발자 <br> 오승현입니다.**
-
-<br>
-<br>
-<br>
-<br>
-<br>
 
 ---
 
@@ -23,9 +19,9 @@ socialImage: "/media/my-image-1.png"
 
 - 안녕하십니까 3년차 프론트 엔드 개발자 오승현입니다.
 - 1년 동안 서버 개발을 했었지만 프론트에 더 흥미가 있어 프론트 개발자로 전향하였습니다.
-- 개발을 할 때 성능도 중요하지만 사용자의 UI/UX에 초점에 맞추어 개발을 하려고 노력합니다.
+- 개발을 할 때 성능도 중요하지만 사용자의 UI/UX에 초점을 두어 개발을 하려고 노력합니다.
 - 새로운 것을 배우는 거에 부담감이 없고 많은 기술을 배우려고 노력합니다.
-- DRY(Do not Repeat Yourself) 와 KISS(Keep It Simple Stupid)을 항상 고민합니다.
+- DRY(Do not Repeat Yourself) 와 KISS(Keep It Simple Stupid) 항상 고민합니다.
 - 문제가 생길 시 ☕️를 마시며 느긋하게 생각하는걸 좋아합니다.
 
 ---
@@ -55,7 +51,7 @@ socialImage: "/media/my-image-1.png"
 
 ---
 
-## 💻 Projects <div id="123">Projects</div>
+## 💻 Projects
 
 ### DID 모바일 사원증 앱
 
@@ -112,12 +108,12 @@ _2019.12 ~ 2020.3_
 - 원하는 데이터와 이미지를 통해 사원증 템플릿 생성
   <br>
 
-<figure class="float-left" style="width: 100%;max-width: 32rem; padding: 0 0 10px 0 ">
+<figure class="float-left" style="width: 100%;max-width: 36rem; padding: 0 0 10px 0; margin:0; ">
     <img src="./card-image.png"  alt="템플릿 이미지">
     <figcaption>템플릿 이미지</figcaption>
 </figure>
 
-<figure class="float-left" style="display:flex; width: 100%;max-width: 44rem; margin:0px; padding: 0 0 10px 0 ">
+<figure class="float-left" style="display:flex; width: 100%;max-width: 44rem; margin:0; padding: 0 0 10px 0 ">
     <div style="width:70%">
         <img src="./card-template.png"  alt="템플릿 만들기">
         <figcaption>템플릿 만들기</figcaption>
@@ -134,11 +130,11 @@ _2019.12 ~ 2020.3_
 
 ### Nuxt.js를 사용한 사내 솔루션
 
-- 첫 SEO의 경험
-- SSR(서버사이드 렌더링)과 (CSR)클라이언트 사이드 렌더링의 결합
+- SEO의 경험
+- SSR(서버사이드 렌더링)과 CSR(클라이언트 사이드 렌더링)의 결합
 - 페이지 내 메타데이터 추가
 
-<figure class="float-left" style="width: 100%;max-width: 32rem; padding: 0 0 10px 0 ">
+<figure class="float-left" style="width: 100%;max-width: 35rem; padding: 0 0 10px 0; margin:0; ">
     <img src="./rnd-image.png"  alt="솔루션 소개 사이트<">
     <figcaption>사내 솔루션 소개 사이트</figcaption>
 </figure>

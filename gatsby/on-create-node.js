@@ -4,6 +4,7 @@ const _ = require('lodash');
 const { createFilePath } = require('gatsby-source-filesystem');
 
 const onCreateNode = ({ node, actions, getNode }) => {
+  console.log(node,getNode);
   const { createNodeField } = actions;
 
   if (node.internal.type === 'MarkdownRemark') {
