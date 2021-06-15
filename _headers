@@ -93,18 +93,6 @@
   Link: </livedata-blog/component---src-templates-categories-list-template-js-2181ec47d28e5c35d3e9.js>; rel=preload; as=script
   Link: </livedata-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </livedata-blog/page-data/categories/page-data.json>; rel=preload; as=fetch; crossorigin
-/livedata-blog/posts/perfecting-the-art-of-perfection
-  Link: </livedata-blog/webpack-runtime-b6418d72f90ad2460684.js>; rel=preload; as=script
-  Link: </livedata-blog/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
-  Link: </livedata-blog/framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
-  Link: </livedata-blog/532a2f07-d05f238db5f768b1710d.js>; rel=preload; as=script
-  Link: </livedata-blog/dc6a8720040df98778fe970bf6c000a41750d3ae-f9c288b65727632fb68e.js>; rel=preload; as=script
-  Link: </livedata-blog/app-5b280046c972c03582bf.js>; rel=preload; as=script
-  Link: </livedata-blog/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
-  Link: </livedata-blog/cd95ea5cbd2c605f26db819f07999610c9ff4310-babf0c2595a064681f8b.js>; rel=preload; as=script
-  Link: </livedata-blog/component---src-templates-post-template-js-cbe455e318cee0d580b1.js>; rel=preload; as=script
-  Link: </livedata-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </livedata-blog/page-data/posts/perfecting-the-art-of-perfection/page-data.json>; rel=preload; as=fetch; crossorigin
 /livedata-blog/posts/the-origins-of-social-stationery-lettering
   Link: </livedata-blog/webpack-runtime-b6418d72f90ad2460684.js>; rel=preload; as=script
   Link: </livedata-blog/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
@@ -117,6 +105,18 @@
   Link: </livedata-blog/component---src-templates-post-template-js-cbe455e318cee0d580b1.js>; rel=preload; as=script
   Link: </livedata-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </livedata-blog/page-data/posts/the-origins-of-social-stationery-lettering/page-data.json>; rel=preload; as=fetch; crossorigin
+/livedata-blog/posts/perfecting-the-art-of-perfection
+  Link: </livedata-blog/webpack-runtime-b6418d72f90ad2460684.js>; rel=preload; as=script
+  Link: </livedata-blog/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </livedata-blog/framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
+  Link: </livedata-blog/532a2f07-d05f238db5f768b1710d.js>; rel=preload; as=script
+  Link: </livedata-blog/dc6a8720040df98778fe970bf6c000a41750d3ae-f9c288b65727632fb68e.js>; rel=preload; as=script
+  Link: </livedata-blog/app-5b280046c972c03582bf.js>; rel=preload; as=script
+  Link: </livedata-blog/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </livedata-blog/cd95ea5cbd2c605f26db819f07999610c9ff4310-babf0c2595a064681f8b.js>; rel=preload; as=script
+  Link: </livedata-blog/component---src-templates-post-template-js-cbe455e318cee0d580b1.js>; rel=preload; as=script
+  Link: </livedata-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </livedata-blog/page-data/posts/perfecting-the-art-of-perfection/page-data.json>; rel=preload; as=fetch; crossorigin
 /livedata-blog/posts/a-brief-history-of-typography
   Link: </livedata-blog/webpack-runtime-b6418d72f90ad2460684.js>; rel=preload; as=script
   Link: </livedata-blog/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
@@ -129,18 +129,6 @@
   Link: </livedata-blog/component---src-templates-post-template-js-cbe455e318cee0d580b1.js>; rel=preload; as=script
   Link: </livedata-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </livedata-blog/page-data/posts/a-brief-history-of-typography/page-data.json>; rel=preload; as=fetch; crossorigin
-/livedata-blog/posts/humane-typography-in-the-digital-age
-  Link: </livedata-blog/webpack-runtime-b6418d72f90ad2460684.js>; rel=preload; as=script
-  Link: </livedata-blog/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
-  Link: </livedata-blog/framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
-  Link: </livedata-blog/532a2f07-d05f238db5f768b1710d.js>; rel=preload; as=script
-  Link: </livedata-blog/dc6a8720040df98778fe970bf6c000a41750d3ae-f9c288b65727632fb68e.js>; rel=preload; as=script
-  Link: </livedata-blog/app-5b280046c972c03582bf.js>; rel=preload; as=script
-  Link: </livedata-blog/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
-  Link: </livedata-blog/cd95ea5cbd2c605f26db819f07999610c9ff4310-babf0c2595a064681f8b.js>; rel=preload; as=script
-  Link: </livedata-blog/component---src-templates-post-template-js-cbe455e318cee0d580b1.js>; rel=preload; as=script
-  Link: </livedata-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </livedata-blog/page-data/posts/humane-typography-in-the-digital-age/page-data.json>; rel=preload; as=fetch; crossorigin
 /livedata-blog/posts/the-birth-of-movable-type
   Link: </livedata-blog/webpack-runtime-b6418d72f90ad2460684.js>; rel=preload; as=script
   Link: </livedata-blog/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
@@ -153,6 +141,18 @@
   Link: </livedata-blog/component---src-templates-post-template-js-cbe455e318cee0d580b1.js>; rel=preload; as=script
   Link: </livedata-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </livedata-blog/page-data/posts/the-birth-of-movable-type/page-data.json>; rel=preload; as=fetch; crossorigin
+/livedata-blog/posts/humane-typography-in-the-digital-age
+  Link: </livedata-blog/webpack-runtime-b6418d72f90ad2460684.js>; rel=preload; as=script
+  Link: </livedata-blog/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </livedata-blog/framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
+  Link: </livedata-blog/532a2f07-d05f238db5f768b1710d.js>; rel=preload; as=script
+  Link: </livedata-blog/dc6a8720040df98778fe970bf6c000a41750d3ae-f9c288b65727632fb68e.js>; rel=preload; as=script
+  Link: </livedata-blog/app-5b280046c972c03582bf.js>; rel=preload; as=script
+  Link: </livedata-blog/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </livedata-blog/cd95ea5cbd2c605f26db819f07999610c9ff4310-babf0c2595a064681f8b.js>; rel=preload; as=script
+  Link: </livedata-blog/component---src-templates-post-template-js-cbe455e318cee0d580b1.js>; rel=preload; as=script
+  Link: </livedata-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </livedata-blog/page-data/posts/humane-typography-in-the-digital-age/page-data.json>; rel=preload; as=fetch; crossorigin
 /livedata-blog/pages/about/
   Link: </livedata-blog/webpack-runtime-b6418d72f90ad2460684.js>; rel=preload; as=script
   Link: </livedata-blog/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
@@ -177,18 +177,6 @@
   Link: </livedata-blog/component---src-templates-post-template-js-cbe455e318cee0d580b1.js>; rel=preload; as=script
   Link: </livedata-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </livedata-blog/page-data/posts/Javascript hight/page-data.json>; rel=preload; as=fetch; crossorigin
-/livedata-blog/pages/contacts/
-  Link: </livedata-blog/webpack-runtime-b6418d72f90ad2460684.js>; rel=preload; as=script
-  Link: </livedata-blog/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
-  Link: </livedata-blog/framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
-  Link: </livedata-blog/532a2f07-d05f238db5f768b1710d.js>; rel=preload; as=script
-  Link: </livedata-blog/dc6a8720040df98778fe970bf6c000a41750d3ae-f9c288b65727632fb68e.js>; rel=preload; as=script
-  Link: </livedata-blog/app-5b280046c972c03582bf.js>; rel=preload; as=script
-  Link: </livedata-blog/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
-  Link: </livedata-blog/cd95ea5cbd2c605f26db819f07999610c9ff4310-babf0c2595a064681f8b.js>; rel=preload; as=script
-  Link: </livedata-blog/component---src-templates-page-template-js-d8aeb4e67f2e8af3e6cd.js>; rel=preload; as=script
-  Link: </livedata-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </livedata-blog/page-data/pages/contacts/page-data.json>; rel=preload; as=fetch; crossorigin
 /livedata-blog/posts/vue-performance
   Link: </livedata-blog/webpack-runtime-b6418d72f90ad2460684.js>; rel=preload; as=script
   Link: </livedata-blog/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
@@ -201,6 +189,18 @@
   Link: </livedata-blog/component---src-templates-post-template-js-cbe455e318cee0d580b1.js>; rel=preload; as=script
   Link: </livedata-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </livedata-blog/page-data/posts/vue-performance/page-data.json>; rel=preload; as=fetch; crossorigin
+/livedata-blog/pages/contacts/
+  Link: </livedata-blog/webpack-runtime-b6418d72f90ad2460684.js>; rel=preload; as=script
+  Link: </livedata-blog/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </livedata-blog/framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
+  Link: </livedata-blog/532a2f07-d05f238db5f768b1710d.js>; rel=preload; as=script
+  Link: </livedata-blog/dc6a8720040df98778fe970bf6c000a41750d3ae-f9c288b65727632fb68e.js>; rel=preload; as=script
+  Link: </livedata-blog/app-5b280046c972c03582bf.js>; rel=preload; as=script
+  Link: </livedata-blog/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </livedata-blog/cd95ea5cbd2c605f26db819f07999610c9ff4310-babf0c2595a064681f8b.js>; rel=preload; as=script
+  Link: </livedata-blog/component---src-templates-page-template-js-d8aeb4e67f2e8af3e6cd.js>; rel=preload; as=script
+  Link: </livedata-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </livedata-blog/page-data/pages/contacts/page-data.json>; rel=preload; as=fetch; crossorigin
 /livedata-blog/tag/design
   Link: </livedata-blog/webpack-runtime-b6418d72f90ad2460684.js>; rel=preload; as=script
   Link: </livedata-blog/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
