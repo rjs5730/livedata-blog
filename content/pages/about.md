@@ -1,5 +1,5 @@
 ---
-title: "💁🏻 내 정보"
+title: "My Info"
 template: "page"
 socialImage: "/media/my-image-1.png"
 ---
@@ -9,7 +9,7 @@ socialImage: "/media/my-image-1.png"
 	<figcaption>코엑스 전시회 중</figcaption>
   </figure>
 
-## **노력하는 개발자 <br> 오승현입니다.**
+**노력하는 개발자 <br> 오승현입니다.**
 
 <br>
 <br>
@@ -19,7 +19,7 @@ socialImage: "/media/my-image-1.png"
 
 ---
 
-## Introduction
+## 💁🏻 Introduction
 
 - 안녕하십니까 3년차 프론트 엔드 개발자 오승현입니다.
 - 1년 동안 서버 개발을 했었지만 프론트에 더 흥미가 있어 프론트 개발자로 전향하였습니다.
@@ -30,12 +30,13 @@ socialImage: "/media/my-image-1.png"
 
 ---
 
-## <span style="font-size:2.5rem; color:#0b7285">⛏️ Skills</span>
+## ⛏️ Skills
 
 ### Frontend
 
 - HTML5, CSS3(SCSS), JS(ES6)
 - Vue.js (주력)
+- Nuxt.js
 - Typescript
 - Cordova
 - React (현재 공부 중)
@@ -47,9 +48,14 @@ socialImage: "/media/my-image-1.png"
 - Spring Boot, Spring MVC, Spring Batch, Spring Data JPA
 - JPA
 
+### Studing...
+
+- 디자인 패턴
+- scss
+
 ---
 
-## <span style="font-size:2.5rem; color:#0b7285">💻 Projects</span>
+## 💻 Projects <div id="123">Projects</div>
 
 ### DID 모바일 사원증 앱
 
@@ -94,3 +100,45 @@ _2019.12 ~ 2020.3_
 - 블록체인의 체인코드 설치 및 커밋 개발
 - 블록체인 모니터링 도구인 Explorer 연동
 - 블록체인 성능 측정 도구인 Caliper 사용하여 TPS 측정
+
+<br>
+<br>
+
+## ⛷ 인상 깊었던 프로젝트
+
+### 모바일 사원증 템플릿
+
+- canvas.js 라이브러리 사용
+- 원하는 데이터와 이미지를 통해 사원증 템플릿 생성
+  <br>
+
+<figure class="float-left" style="width: 100%;max-width: 32rem; padding: 0 0 10px 0 ">
+    <img src="./card-image.png"  alt="템플릿 이미지">
+    <figcaption>템플릿 이미지</figcaption>
+</figure>
+
+<figure class="float-left" style="display:flex; width: 100%;max-width: 44rem; margin:0px; padding: 0 0 10px 0 ">
+    <div style="width:70%">
+        <img src="./card-template.png"  alt="템플릿 만들기">
+        <figcaption>템플릿 만들기</figcaption>
+    </div>
+    <div style="width:30%; margin-left: 10px;">
+        <img src="./mobile-app.jpg"  alt="모바일 사원증 앱">
+        <figcaption>모바일 사원증 앱</figcaption>
+    </div>
+</figure>
+
+---
+
+<br>
+
+### Nuxt.js를 사용한 사내 솔루션
+
+- 첫 SEO의 경험
+- SSR(서버사이드 렌더링)과 (CSR)클라이언트 사이드 렌더링의 결합
+- 페이지 내 메타데이터 추가
+
+<figure class="float-left" style="width: 100%;max-width: 32rem; padding: 0 0 10px 0 ">
+    <img src="./rnd-image.png"  alt="솔루션 소개 사이트<">
+    <figcaption>사내 솔루션 소개 사이트</figcaption>
+</figure>

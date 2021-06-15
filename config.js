@@ -4,9 +4,7 @@ module.exports = {
   url: 'https://rjs5730.github.io/livedata-blog/',
   pathPrefix: '/livedata-blog',
   title: 'Seunhyun blog',
-  subtitle: `웹 프론트 개발자.
-  ps. 노력과 성공은 정비례
-        아는만큼 보인다.`,
+  subtitle: `웹 프론트 개발자.`,
   copyright: '© All rights reserved.',
   disqusShortname: 'livedata-1',
   postsPerPage: 5,
@@ -14,24 +12,26 @@ module.exports = {
   useKatex: false,
   menu: [
     {
-      label: 'Posts',
+      label: 'All Posts',
       path: '/'
+    },
+    {
+      label: 'Categories',
+      path: '/categories'
+    },
+    {
+      label: 'Tags',
+      path: '/tags'
     },
     {
       label: 'My Info',
       path: '/pages/about'
     },
-    // {
-    //   label: 'Contact me',
-    //   path: '/pages/contacts'
-    // }
   ],
   author: {
     name: 'Oh Seung-hyun',
     photo: '/photo.png',
-    bio: `웹 프론트 개발자.
-ps. 노력과 성공은 정비례
-      아는만큼 보인다.`,
+    bio: `웹 프론트 개발자.`,
     contacts: {
       email: 'rjs5730@naver.com',
       facebook: '',
