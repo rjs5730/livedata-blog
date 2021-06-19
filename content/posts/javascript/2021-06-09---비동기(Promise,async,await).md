@@ -9,7 +9,7 @@ tags:
   - "Javascript"
   - "function"
 description: "자바스크립트 비동기를 알아보고 Promise, async와 await 사용법을 공부해봅시다."
-socialImage: "/media/javascript-image.png"
+socialImage: "/media/javascript-icon.png"
 ---
 
 ## Promise

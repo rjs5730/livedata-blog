@@ -9,7 +9,7 @@ tags:
   - "Javascript"
   - "core"
 description: "자바스크립트 이벤트 루프에 대해 알아보고 크롬의 V8 엔진이 비동기에 대해 어떻게 처리하는지 알 수 있습니다."
-socialImage: "/media/javascript-image.png"
+socialImage: "/media/javascript-icon.png"
 ---
 
 ## 이벤트 루프를 잘 설명한 유튜브 영상

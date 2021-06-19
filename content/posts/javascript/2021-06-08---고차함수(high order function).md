@@ -9,7 +9,7 @@ tags:
   - "Javascript"
   - "function"
 description: "자바스크립트 고차함수를 설명합니다. 기존 for를 사용하는 방식과 달리 고차함수를 사용하여 많은 장점을 가질 수 있습니다."
-socialImage: "/media/javascript-image.png"
+socialImage: "/media/javascript-icon.png"
 ---
 
 ### 고차함수란?
