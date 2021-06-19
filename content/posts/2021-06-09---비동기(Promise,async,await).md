@@ -1,5 +1,5 @@
 ---
-title: 비동기를 알아보자(Promise,async,await)
+title: 비동기(Promise,async,await)
 date: "2021-06-09T22:40:32.169Z"
 template: "post"
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: ES6 고차함수를 사용하자
+title: ES6 고차함수(high order function)
 date: "2021-06-08T22:40:32.169Z"
 template: "post"
 draft: false
