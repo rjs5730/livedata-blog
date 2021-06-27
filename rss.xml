@@ -1,4 +1,224 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Seunhyun blog]]></title><description><![CDATA[웹 프론트 개발자.]]></description><link>https://rjs5730.github.io/livedata-blog/</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 21 Jun 2021 11:31:07 GMT</lastBuildDate><item><title><![CDATA[Javascript 이벤트루프(Event Loop)]]></title><description><![CDATA[자바스크립트 이벤트 루프에 대해 알아보고 크롬의 V8 엔진이 비동기에 대해 어떻게 처리하는지 알 수 있습니다.]]></description><link>https://rjs5730.github.io/livedata-blog//posts/javascript/Javascript Event Loop</link><guid isPermaLink="false">https://rjs5730.github.io/livedata-blog//posts/javascript/Javascript Event Loop</guid><pubDate>Thu, 10 Jun 2021 22:40:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;이벤트-루프를-잘-설명한-유튜브-영상&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A3%A8%ED%94%84%EB%A5%BC-%EC%9E%98-%EC%84%A4%EB%AA%85%ED%95%9C-%EC%9C%A0%ED%8A%9C%EB%B8%8C-%EC%98%81%EC%83%81&quot; aria-label=&quot;이벤트 루프를 잘 설명한 유튜브 영상 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;이벤트 루프를 잘 설명한 유튜브 영상&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Seunhyun blog]]></title><description><![CDATA[웹 프론트 개발자.]]></description><link>https://rjs5730.github.io/livedata-blog/</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 27 Jun 2021 07:27:35 GMT</lastBuildDate><item><title><![CDATA[Vue 프로젝트 경험과 고민]]></title><description><![CDATA[Vue 프로젝트 경험과 프로젝트 하면서 고민했던 내용들입니다. 어떻게하면 공통된 코드를 일관되게 유지하면서 유지보수를 잘 할 수 있는지에 대해 중점적으로 다루었습니다.]]></description><link>https://rjs5730.github.io/livedata-blog//posts/experience/my-project-experience</link><guid isPermaLink="false">https://rjs5730.github.io/livedata-blog//posts/experience/my-project-experience</guid><pubDate>Fri, 18 Jun 2021 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Vue 프로젝트 경험과 프로젝트 하면서 고민했던 내용들입니다. 어떻게하면 공통된 코드를 일관되게 유지하면서 유지보수를 잘 할 수 있는지에 대해 중점적으로 다루었습니다.&lt;/p&gt;
+&lt;h1 id=&quot;모바일-사원증-프로젝트&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%82%AC%EC%9B%90%EC%A6%9D-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8&quot; aria-label=&quot;모바일 사원증 프로젝트 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;모바일 사원증 프로젝트&lt;/h1&gt;
+&lt;figure style=&quot;display: flex; align-items: center;&quot;&gt;
+  &lt;div style=&quot;width:100%; margin: 0 20px;&quot;&gt;
+        &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 828px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/livedata-blog/static/85bfff84f2ac0333d7f695bf27ac9973/b2cd5/mobile-app.jpg&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 191.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAmABQDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAECAwQF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAH3oipoByNprVVcyAD/xAAeEAABBAEFAAAAAAAAAAAAAAACAAEQEQMSEyMxQf/aAAgBAQABBQJM1RptAbFHmErJb3Jabqf/xAAXEQEAAwAAAAAAAAAAAAAAAAABAhAg/9oACAEDAQE/AaYpj//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BX//EABwQAAICAgMAAAAAAAAAAAAAAAERECEAIANBYf/aAAgBAQAGPwLQotSfbg8avrKGv//EAB0QAQACAgIDAAAAAAAAAAAAAAEAESExEEEgUWH/2gAIAQEAAT8huBpwjaJm86StTuLSfUMZnZO5Y70ZYGYOA+njf//aAAwDAQACAAMAAAAQFAKA88//xAAXEQEAAwAAAAAAAAAAAAAAAAARECBB/9oACAEDAQE/EIBdp//EABYRAQEBAAAAAAAAAAAAAAAAAAEQIP/aAAgBAgEBPxCCOP/EACAQAQACAgEEAwAAAAAAAAAAAAEAESExQSBRYXGR0fD/2gAIAQEAAT8QcMpFFKXvKzS+ZmaPGQf22NUsNS3xHaYNui1Ed2OumwPRXHiO0UYIsqihZfffuIa/cNX1NV9H/9k=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source srcset=&quot;/livedata-blog/static/85bfff84f2ac0333d7f695bf27ac9973/8ac56/mobile-app.webp 240w,
+/livedata-blog/static/85bfff84f2ac0333d7f695bf27ac9973/d3be9/mobile-app.webp 480w,
+/livedata-blog/static/85bfff84f2ac0333d7f695bf27ac9973/712de/mobile-app.webp 828w&quot; sizes=&quot;(max-width: 828px) 100vw, 828px&quot; type=&quot;image/webp&quot;&gt;
+          &lt;source srcset=&quot;/livedata-blog/static/85bfff84f2ac0333d7f695bf27ac9973/09b79/mobile-app.jpg 240w,
+/livedata-blog/static/85bfff84f2ac0333d7f695bf27ac9973/7cc5e/mobile-app.jpg 480w,
+/livedata-blog/static/85bfff84f2ac0333d7f695bf27ac9973/b2cd5/mobile-app.jpg 828w&quot; sizes=&quot;(max-width: 828px) 100vw, 828px&quot; type=&quot;image/jpeg&quot;&gt;
+          &lt;img class=&quot;gatsby-resp-image-image&quot; src=&quot;/livedata-blog/static/85bfff84f2ac0333d7f695bf27ac9973/b2cd5/mobile-app.jpg&quot; alt=&quot;모바일 사원증 앱&quot; title=&quot;모바일 사원증 앱&quot; loading=&quot;lazy&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+        &lt;figcaption&gt;모바일 사원증 앱&lt;/figcaption&gt;
+        &lt;/div&gt;
+  &lt;div&gt;
+DID 기반 모바일 사원증 프로젝트로 본인인증과 인사 정보를 받아 블록체인 자기 신원증명으로 인증서를 만들어주고 이 인증서를 통해 출입증을 발급합니다. 발급받은 출입증에는 출입할 수 있는 고유번호가 있으며 모바일의 블루투스나 NFC로 출입문 게이트를 인식해 유효하다고 판단하면 게이트를 열어주는 앱입니다.
+&lt;/div&gt;
+&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;-아키텍처&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98&quot; aria-label=&quot; 아키텍처 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;🔨 아키텍처&lt;/h2&gt;
+&lt;h3 id=&quot;ui&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#ui&quot; aria-label=&quot;ui permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;UI&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;atomic 컴포넌트 적용&lt;/li&gt;
+&lt;li&gt;View 와 비즈니스 로직을 분리&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;service--vuex-action&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#service--vuex-action&quot; aria-label=&quot;service  vuex action permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Service / Vuex-action&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;실제 비즈니스 로직을 service 파일과 vuex의 action 활용&lt;/li&gt;
+&lt;li&gt;클린 아키텍처의 Controller/service 개념 통합&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;api&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#api&quot; aria-label=&quot;api permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;api&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;서버와 통신하는 비동기 통신 코드.&lt;/li&gt;
+&lt;li&gt;클린 아키텍처의 Gateway/Repository 개념 통합&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;상태관리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC&quot; aria-label=&quot;상태관리 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;상태관리&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;각각 기능의 가장 상위(root) 페이지에서 관리&lt;/li&gt;
+&lt;li&gt;전역으로 사용하는 데이터는 Vuex 활용 ex) user, settings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;참고)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://velog.io/@thsoon/%EC%93%B8%EB%95%8C%EC%97%86%EC%9D%B4-%EA%B3%A0%ED%80%84%EC%9D%B8-%ED%88%AC%EB%91%90%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-FE-2.-%EB%B7%B0-%EC%84%A4%EA%B3%84&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;아토믹 컴포넌트 TODO APP 예제&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://atomicdesign.bradfrost.com/chapter-2/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Atomic Design Methodology&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://uchanlee.dev/clean-architecture/clean-architecture-for-frontend/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;프론트에 적용하는 클린 아키텍처&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;-develop&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-develop&quot; aria-label=&quot; develop permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;💻 Develop&lt;/h1&gt;
+&lt;h3 id=&quot;타입스크립트-적용&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%A0%81%EC%9A%A9&quot; aria-label=&quot;타입스크립트 적용 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;타입스크립트 적용&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;에러 사전에 방지 (런타임 -&gt; 컴파일타임)&lt;/li&gt;
+&lt;li&gt;개발 생산성 향상&lt;/li&gt;
+&lt;li&gt;각 기능별 entity 정의해서 사용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;코드-컨벤션-작성&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%BD%94%EB%93%9C-%EC%BB%A8%EB%B2%A4%EC%85%98-%EC%9E%91%EC%84%B1&quot; aria-label=&quot;코드 컨벤션 작성 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;코드 컨벤션 작성&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;가독성과 유지보수를 위한 일관된 코드를 위해 코드 컨벤션 필요&lt;/li&gt;
+&lt;li&gt;아래 참조 사이트를 통해 파트 표준 컨벤션 정의&lt;/li&gt;
+&lt;li&gt;컨벤션 정의를 게시판과 StoryBook을 통해 공유&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/livedata-blog/static/0c906e73b6863868925ae762f87da9b0/c68a4/convention-image.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 55.833333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABWklEQVQoz5WSQW6DMBBFuf9Nqkq9RfddddFILJqEGAhgbGyPjZPfsQlSpNK0tfQ044H5/MEuun2Lz1ODcXLoDUHoAGMtLpcLYowIIeS4ruuVucvvV9oWbtIwowSCx4Wb94cjyrKEUgqWhZ1zC5wbY3Ke6uuzNV8pnj8IL+8ST7sZr9UMJQe0bYu6adD3fW5KLr33IKIc1/1WvXgXGm+lwO5MqKeIpqkhhEBdC1TVMYv+ZxXBB8xhRpxjph9GdIyeLBSjDY9CPmMcR8ZxD3HPFoX1kV+OMMQFzpPYkQ+plwpSG4yMvDFqy4eXPkJZfItF8CaaBClEKG4+VAL7qs7iKQ6jhmMHlkLG/MA3QcfFvhtQtRrn0TEWrUzOaBFa3fwqmNz5GTqNxncyNXt2tEL+sbNth2H5h/vDCaLTaCQxDqfe5qiMv7n888iLk6GTOKWRFeWxW0ZO9HDUlS9Ly1PVAIXhCQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/livedata-blog/static/0c906e73b6863868925ae762f87da9b0/8ac56/convention-image.webp 240w,
+/livedata-blog/static/0c906e73b6863868925ae762f87da9b0/d3be9/convention-image.webp 480w,
+/livedata-blog/static/0c906e73b6863868925ae762f87da9b0/e46b2/convention-image.webp 960w,
+/livedata-blog/static/0c906e73b6863868925ae762f87da9b0/f992d/convention-image.webp 1440w,
+/livedata-blog/static/0c906e73b6863868925ae762f87da9b0/882b9/convention-image.webp 1920w,
+/livedata-blog/static/0c906e73b6863868925ae762f87da9b0/47384/convention-image.webp 2402w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/livedata-blog/static/0c906e73b6863868925ae762f87da9b0/8ff5a/convention-image.png 240w,
+/livedata-blog/static/0c906e73b6863868925ae762f87da9b0/e85cb/convention-image.png 480w,
+/livedata-blog/static/0c906e73b6863868925ae762f87da9b0/d9199/convention-image.png 960w,
+/livedata-blog/static/0c906e73b6863868925ae762f87da9b0/07a9c/convention-image.png 1440w,
+/livedata-blog/static/0c906e73b6863868925ae762f87da9b0/29114/convention-image.png 1920w,
+/livedata-blog/static/0c906e73b6863868925ae762f87da9b0/c68a4/convention-image.png 2402w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/livedata-blog/static/0c906e73b6863868925ae762f87da9b0/d9199/convention-image.png&quot;
+            alt=&quot;컨벤션 이미지&quot;
+            title=&quot;컨벤션 이미지&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;참조&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EC%A1%B0&quot; aria-label=&quot;참조 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;참조&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ui.toast.com/fe-guide/ko_CODING-CONVENTION&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;javascript convention&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://ui.toast.com/fe-guide/ko_ANTI-PATTERN&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;안티패턴&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://kr.vuejs.org/v2/style-guide/index.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Vue 스타일 가이드&lt;/a&gt; A규칙과 B규칙&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://radlohead.gitbook.io/typescript-deep-dive/styleguide&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;TypeScript 스타일 가이드&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;-하고싶었던-기능-추가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-%ED%95%98%EA%B3%A0%EC%8B%B6%EC%97%88%EB%8D%98-%EA%B8%B0%EB%8A%A5-%EC%B6%94%EA%B0%80&quot; aria-label=&quot; 하고싶었던 기능 추가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;🌈 하고싶었던 기능 추가&lt;/h2&gt;
+&lt;h3 id=&quot;변경-가능한-템플릿&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B3%80%EA%B2%BD-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%85%9C%ED%94%8C%EB%A6%BF&quot; aria-label=&quot;변경 가능한 템플릿 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;변경 가능한 템플릿&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;사원증의 템플릿이 고정적이지않고 관리자가 자유롭게 변경가능하도록 설계&lt;/li&gt;
+&lt;li&gt;fabric.js 라이브러리 활용&lt;/li&gt;
+&lt;li&gt;svg 사용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/livedata-blog/static/773cb34a0b7215cdb3536887d876b09a/56caf/card-template.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 81.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAACT0lEQVQ4y42TO2/TUBiG/UMq+AuUbiwsLVMHQEIIBAMsDPwRRoTShTQgNWmAAhISI0JiQYghClJEII2dBNVxHF9ix/Ulvr585zQxaZOgWnptHX+vn/NdjoWNrdu4euMBrmzfx/a9x1jfvIW1S5u4ePkaLjBtrNA0tra+heLNu/j28BGeXb8D4fneG7yovkep8hal/Xcolg+ws1tB4WUVhdI+CsUyCrtMlalO1julyomP9LH8Gp+rB/iw9wpCGPhAlmL+CqIQ4e9fgDPO3yVxRPcsX3uuiwl9y5UkiOmdMlQhDAYqLNtGQAHbTyBbMQxDR/dnE3KvB7nfh6br8HwfnufBJXlTGaaJoyMZSl/hkkQJgqZpBAv4riMvxR8bsEwdLVGE1OngsNWCoih5Zj3ahMG4fzRCi+IiedvtNiSJgMPhEAZlwItJE6RUmq4bEMnQ7Xa5WVVVDkjTFL4fII5jvrYsi8c7tPFMgs7Kme4YUy+CSUQlG3xHZpgHutS3RqPBQTPgzHcKmBCIN56ek3A10KSe1et19KmvK4Gsh2EYngvIes08Pg3ov8AoinJgOAWK4iKQgWq1Gs90JZCZTZoWTQOGl0Ekrz1anmGWZRwyq2glcDx2uEFxMjQ0Os+WgcM5IDsJ+ZX++wlsOr+LQ6HyRpbNDZqbob0kQzYEVi6bsnt8zJ9szdq1cGxcx0YWsSbT75NmcKgac24oTOzAsg/Pir2fxXNgWzbxXbLRHIToUaKyczrDefMynY0Ln5oOnn5N8eRLhB9yyDMdqIulnBf4F28CdK12DrygAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/livedata-blog/static/773cb34a0b7215cdb3536887d876b09a/8ac56/card-template.webp 240w,
+/livedata-blog/static/773cb34a0b7215cdb3536887d876b09a/d3be9/card-template.webp 480w,
+/livedata-blog/static/773cb34a0b7215cdb3536887d876b09a/e46b2/card-template.webp 960w,
+/livedata-blog/static/773cb34a0b7215cdb3536887d876b09a/f992d/card-template.webp 1440w,
+/livedata-blog/static/773cb34a0b7215cdb3536887d876b09a/dc596/card-template.webp 1712w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/livedata-blog/static/773cb34a0b7215cdb3536887d876b09a/8ff5a/card-template.png 240w,
+/livedata-blog/static/773cb34a0b7215cdb3536887d876b09a/e85cb/card-template.png 480w,
+/livedata-blog/static/773cb34a0b7215cdb3536887d876b09a/d9199/card-template.png 960w,
+/livedata-blog/static/773cb34a0b7215cdb3536887d876b09a/07a9c/card-template.png 1440w,
+/livedata-blog/static/773cb34a0b7215cdb3536887d876b09a/56caf/card-template.png 1712w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/livedata-blog/static/773cb34a0b7215cdb3536887d876b09a/d9199/card-template.png&quot;
+            alt=&quot;카드 템플릿 수정&quot;
+            title=&quot;카드 템플릿 수정&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/livedata-blog/static/ab315507e53b1e7e07c1b23f584237c5/f4fb1/card-image.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 50.416666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAABqElEQVQoz3VSy0rDUBDtzwm6EDf+hIqgCCKC+AEuXCioC39AENx1qStdFEzxVZGmtdaYNEkfN+80NznO3FrfvWSS+zpnzplJKc9zqABGURT8gi+HeBZdvHg9uHkKZxihk4bo0regO5OilKUpeMQnpwh3dlHwghIYocBN7R4NXUcQ+BAUGZ2+xh4SmSnMv4QyyxSJfKpDalWlkgmtyEcYBkA6BPhOJhVJJwn+EH6flzK6zJYdIWD2++A1W7YIGBGQE74aBvwgYBTM2P8iBP4oHRHSpKppuLq8RMolGANziQElqVQq0BsNBX6jUnxXKKX8qZA34jiGZVlwbBue56nUZuQhLXK8kTomrD3WPpWPCdmZcvTbMo8eKXFcd2RDUg2pmzEBB4OBOvd8akqSqmax8smWPzbtTgftdhvjYToW4mIEzJNENco2TTwYLdVt9fzXFLG0Cm9qFtHaBqLVdYjpOUSLK2iVy7Bn5pGflZHUmzCuq9Bv7xTh8BfhD4Xi6Bj9jS2IvQOI/QP0NrcR7B/CeW7iZmEZ+sU57lwTWvMJWquOumtN/Ac53gElhvcbJxLKrwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/livedata-blog/static/ab315507e53b1e7e07c1b23f584237c5/8ac56/card-image.webp 240w,
+/livedata-blog/static/ab315507e53b1e7e07c1b23f584237c5/d3be9/card-image.webp 480w,
+/livedata-blog/static/ab315507e53b1e7e07c1b23f584237c5/e46b2/card-image.webp 960w,
+/livedata-blog/static/ab315507e53b1e7e07c1b23f584237c5/f992d/card-image.webp 1440w,
+/livedata-blog/static/ab315507e53b1e7e07c1b23f584237c5/921bf/card-image.webp 1766w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/livedata-blog/static/ab315507e53b1e7e07c1b23f584237c5/8ff5a/card-image.png 240w,
+/livedata-blog/static/ab315507e53b1e7e07c1b23f584237c5/e85cb/card-image.png 480w,
+/livedata-blog/static/ab315507e53b1e7e07c1b23f584237c5/d9199/card-image.png 960w,
+/livedata-blog/static/ab315507e53b1e7e07c1b23f584237c5/07a9c/card-image.png 1440w,
+/livedata-blog/static/ab315507e53b1e7e07c1b23f584237c5/f4fb1/card-image.png 1766w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/livedata-blog/static/ab315507e53b1e7e07c1b23f584237c5/d9199/card-image.png&quot;
+            alt=&quot;카드 템플릿 이미지들&quot;
+            title=&quot;카드 템플릿 이미지들&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://fabricjs.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;fabric.js 라이브러리&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Javascript 이벤트루프(Event Loop)]]></title><description><![CDATA[자바스크립트 이벤트 루프에 대해 알아보고 크롬의 V8 엔진이 비동기에 대해 어떻게 처리하는지 알 수 있습니다.]]></description><link>https://rjs5730.github.io/livedata-blog//posts/javascript/Javascript Event Loop</link><guid isPermaLink="false">https://rjs5730.github.io/livedata-blog//posts/javascript/Javascript Event Loop</guid><pubDate>Thu, 10 Jun 2021 22:40:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;이벤트-루프를-잘-설명한-유튜브-영상&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A3%A8%ED%94%84%EB%A5%BC-%EC%9E%98-%EC%84%A4%EB%AA%85%ED%95%9C-%EC%9C%A0%ED%8A%9C%EB%B8%8C-%EC%98%81%EC%83%81&quot; aria-label=&quot;이벤트 루프를 잘 설명한 유튜브 영상 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;이벤트 루프를 잘 설명한 유튜브 영상&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=8aGhZQkoFbQ&amp;#x26;t=147s&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
