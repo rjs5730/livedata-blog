@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://rjs5730.github.io/livedata-blog/',
   pathPrefix: '/livedata-blog',
   title: 'Seunhyun blog',
-  subtitle: `웹 프론트 개발자.`,
+  subtitle: '웹 프론트 개발자.',
   copyright: '© All rights reserved.',
   disqusShortname: 'livedata-1',
   postsPerPage: 5,
@@ -31,7 +31,7 @@ module.exports = {
   author: {
     name: 'Oh Seung-hyun',
     photo: '/photo.png',
-    bio: `웹 프론트 개발자.`,
+    bio: '웹 프론트 개발자.',
     contacts: {
       email: 'rjs5730@naver.com',
       facebook: '',

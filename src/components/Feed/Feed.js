@@ -8,56 +8,47 @@ type Props = {
   edges: Edges,
 };
 
-const Feed = ({ edges }: Props) => {
-  console.log(edges);
-  return (
-    <div className={styles['feed']}>
-      {edges.map((edge) => (
-        <div className={styles['feed__item']} key={edge.node.fields.slug}>
-          <div className={styles['feed__item-meta']}>
-            <time
-              className={styles['feed__item-meta-time']}
-              dateTime={new Date(edge.node.frontmatter.date).toLocaleDateString(
-                'en-US',
-                { year: 'numeric', month: 'long', day: 'numeric' }
-              )}
-            >
-              {new Date(edge.node.frontmatter.date).toLocaleDateString(
-                'en-US',
-                {
-                  year: 'numeric',
-                  month: 'long',
-                }
-              )}
-            </time>
-            <span className={styles['feed__item-meta-divider']} />
-            <span className={styles['feed__item-meta-category']}>
-              <Link
-                to={edge.node.fields.categorySlug}
-                className={styles['feed__item-meta-category-link']}
-              >
-                {edge.node.frontmatter.category}
-              </Link>
-            </span>
-          </div>
-          <h2 className={styles['feed__item-title']}>
+const Feed = ({ edges }: Props) => (
+  <div className={styles['feed']}>
+    {edges.map((edge) => (
+      <div className={styles['feed__item']} key={edge.node.fields.slug}>
+        <div className={styles['feed__item-meta']}>
+          <time
+            className={styles['feed__item-meta-time']}
+            dateTime={new Date(edge.node.frontmatter.date).toLocaleDateString(
+              'en-US',
+              { year: 'numeric', month: 'long', day: 'numeric' }
+            )}
+          >
+            {new Date(edge.node.frontmatter.date).toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+            })}
+          </time>
+          <span className={styles['feed__item-meta-divider']} />
+          <span className={styles['feed__item-meta-category']}>
             <Link
-              className={styles['feed__item-title-link']}
-              to={edge.node.fields.slug}
+              to={edge.node.fields.categorySlug}
+              className={styles['feed__item-meta-category-link']}
             >
-              {edge.node.frontmatter.title}
+              {edge.node.frontmatter.category}
             </Link>
-          </h2>
-          <p className={styles['feed__item-description']}>
-            {edge.node.frontmatter.description}
-          </p>
-          <p className={styles['feed__item-description']}>
-            {edge.node.frontmatter.socialImage}
-          </p>
+          </span>
         </div>
-      ))}
-    </div>
-  );
-};
+        <h2 className={styles['feed__item-title']}>
+          <Link
+            className={styles['feed__item-title-link']}
+            to={edge.node.fields.slug}
+          >
+            {edge.node.frontmatter.title}
+          </Link>
+        </h2>
+        <p className={styles['feed__item-description']}>
+          {edge.node.frontmatter.description}
+        </p>
+      </div>
+    ))}
+  </div>
+);
 
 export default Feed;
