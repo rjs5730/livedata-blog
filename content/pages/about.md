@@ -1,7 +1,7 @@
 ---
-title: "My Info"
-template: "page"
-socialImage: "/media/my-image-1.png"
+title: 'My Info'
+template: 'page'
+socialImage: '/media/my-image-1.png'
 ---
 
 <figure class="float-left" style="display:flex; max-width:30rem; padding: 0 0 10px 0 ">
@@ -22,7 +22,6 @@ socialImage: "/media/my-image-1.png"
 - 개발할 때 성능도 중요하지만, 사용자의 UI/UX에 초점을 두어 개발을 하려고 노력합니다.
 - 새로운 기술에 대해 부담감이 없고 많은 기술을 배우려고 노력합니다.
 - DRY(Do not Repeat Yourself)와 KISS(Keep It Simple Stupid)를 항상 생각하며 개발합니다
-- 문제가 생길 시 ☕️를 마시며 느긋하게 생각하는 것을 좋아합니다.
 
 ---
 

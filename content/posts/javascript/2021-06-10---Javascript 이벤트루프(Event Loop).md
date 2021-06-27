@@ -1,15 +1,15 @@
 ---
 title: Javascript 이벤트루프(Event Loop)
-date: "2021-06-10T22:40:32.169Z"
-template: "post"
+date: '2021-06-10T22:40:32.169Z'
+template: 'post'
 draft: false
-slug: "Javascript Event Loop"
-category: "Javascript"
+slug: 'Javascript Event Loop'
+category: 'Javascript'
 tags:
-  - "Javascript"
-  - "core"
-description: "자바스크립트 이벤트 루프에 대해 알아보고 크롬의 V8 엔진이 비동기에 대해 어떻게 처리하는지 알 수 있습니다."
-socialImage: "/media/javascript-icon.png"
+  - 'Javascript'
+  - 'core'
+description: '자바스크립트 이벤트 루프에 대해 알아보고 크롬의 V8 엔진이 비동기에 대해 어떻게 처리하는지 알 수 있습니다.'
+socialImage: '/media/javascript-icon.png'
 ---
 
 ## 이벤트 루프를 잘 설명한 유튜브 영상
@@ -20,13 +20,13 @@ socialImage: "/media/javascript-icon.png"
 
 이벤트 루프 기반의 비동기 방식으로 Non-blocking IO 를 지원한다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ea03d1bf-f1b4-4af7-a410-f34b069d403b/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ea03d1bf-f1b4-4af7-a410-f34b069d403b/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210615%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210615T153851Z&X-Amz-Expires=86400&X-Amz-Signature=6eea485d4e83971cab596365e410b23e0a59b53ed83a4e288e0ed005aeb37504&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ea03d1bf-f1b4-4af7-a410-f34b069d403b/Untitled.png](/media/eventloop-image.png)
 
 비동기를 호출하기 위해서는 Wep API 영역에 따로 정의되어 있다.
 
 이벤트 루프와 태스크 큐와 같은 장치도 자바스크립트 엔진 외부에 구현되어 있음
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/673d163a-78f9-4836-aebb-6042f6ecd592/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/673d163a-78f9-4836-aebb-6042f6ecd592/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210615%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210615T153922Z&X-Amz-Expires=86400&X-Amz-Signature=c18beb0dd58a730cf185740efc351531d865c0e2ab8cbfde8ece9fb2638d4e4b&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/673d163a-78f9-4836-aebb-6042f6ecd592/Untitled.png](/media/nodesystem-image.png)
 
 노드 JS 에 LIBUS라는 라이브러리를 사용하여 이벤트 루프를 제공하고 있다.
 
