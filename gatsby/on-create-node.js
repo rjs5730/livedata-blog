@@ -4,7 +4,7 @@ const _ = require('lodash');
 const { createFilePath } = require('gatsby-source-filesystem');
 
 const onCreateNode = ({ node, actions, getNode }) => {
-  console.log(node,getNode);
+  console.log(node, getNode);
   const { createNodeField } = actions;
 
   if (node.internal.type === 'MarkdownRemark') {
@@ -13,24 +13,28 @@ const onCreateNode = ({ node, actions, getNode }) => {
       createNodeField({
         node,
         name: 'slug',
-        value: `/${dirname}/${node.frontmatter.slug}`
+        value: `/${dirname}/${node.frontmatter.slug}`,
       });
     } else {
       const value = createFilePath({ node, getNode });
       createNodeField({
         node,
         name: 'slug',
-        value
+        value,
       });
     }
 
     if (node.frontmatter.tags) {
-      const tagSlugs = node.frontmatter.tags.map((tag) => `/tag/${_.kebabCase(tag)}/`);
+      const tagSlugs = node.frontmatter.tags.map(
+        (tag) => `/tag/${_.kebabCase(tag)}/`
+      );
       createNodeField({ node, name: 'tagSlugs', value: tagSlugs });
     }
 
     if (node.frontmatter.category) {
-      const categorySlug = `/category/${_.kebabCase(node.frontmatter.category)}/`;
+      const categorySlug = `/category/${_.kebabCase(
+        node.frontmatter.category
+      )}/`;
       createNodeField({ node, name: 'categorySlug', value: categorySlug });
     }
   }
