@@ -22,6 +22,7 @@ const PostTemplate = ({ data }: Props) => {
   } = frontmatter;
   const metaDescription = postDescription || siteSubtitle;
   const socialImageUrl = socialImage?.publicURL;
+
   return (
     <Layout
       title={`${postTitle} - ${siteTitle}`}
