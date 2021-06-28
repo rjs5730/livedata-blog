@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Seunhyun blog]]></title><description><![CDATA[웹 프론트 개발자.]]></description><link>https://rjs5730.github.io/livedata-blog/</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 27 Jun 2021 07:27:35 GMT</lastBuildDate><item><title><![CDATA[Vue 프로젝트 경험과 고민]]></title><description><![CDATA[Vue 프로젝트 경험과 프로젝트 하면서 고민했던 내용들입니다. 어떻게하면 공통된 코드를 일관되게 유지하면서 유지보수를 잘 할 수 있는지에 대해 중점적으로 다루었습니다.]]></description><link>https://rjs5730.github.io/livedata-blog//posts/experience/my-project-experience</link><guid isPermaLink="false">https://rjs5730.github.io/livedata-blog//posts/experience/my-project-experience</guid><pubDate>Fri, 18 Jun 2021 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Vue 프로젝트 경험과 프로젝트 하면서 고민했던 내용들입니다. 어떻게하면 공통된 코드를 일관되게 유지하면서 유지보수를 잘 할 수 있는지에 대해 중점적으로 다루었습니다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Seunhyun blog]]></title><description><![CDATA[웹 프론트 개발자.]]></description><link>https://rjs5730.github.io/livedata-blog/</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 28 Jun 2021 02:16:56 GMT</lastBuildDate><item><title><![CDATA[Vue 프로젝트 경험과 고민]]></title><description><![CDATA[Vue 프로젝트 경험과 프로젝트 하면서 고민했던 내용들입니다. 어떻게하면 공통된 코드를 일관되게 유지하면서 유지보수를 잘 할 수 있는지에 대해 중점적으로 다루었습니다.]]></description><link>https://rjs5730.github.io/livedata-blog//posts/experience/my-project-experience</link><guid isPermaLink="false">https://rjs5730.github.io/livedata-blog//posts/experience/my-project-experience</guid><pubDate>Fri, 18 Jun 2021 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Vue 프로젝트 경험과 프로젝트 하면서 고민했던 내용들입니다. 어떻게하면 공통된 코드를 일관되게 유지하면서 유지보수를 잘 할 수 있는지에 대해 중점적으로 다루었습니다.&lt;/p&gt;
 &lt;h1 id=&quot;모바일-사원증-프로젝트&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%82%AC%EC%9B%90%EC%A6%9D-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8&quot; aria-label=&quot;모바일 사원증 프로젝트 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;모바일 사원증 프로젝트&lt;/h1&gt;
 &lt;figure style=&quot;display: flex; align-items: center;&quot;&gt;
   &lt;div style=&quot;width:100%; margin: 0 20px;&quot;&gt;
@@ -258,10 +258,90 @@ DID 기반 모바일 사원증 프로젝트로 본인인증과 인사 정보를 
     &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;자바스크립트는 단일 스레드 기반 언어 지만 &lt;strong&gt;동시성(Concurrentcy) 를 지원&lt;/strong&gt;한다. 여기서 단일스레드는 자바스크립트엔진이 단일 호출스택을 사용한다라는 관점이다. 브라우저에서는 여러 스레드가 사용되며 이 자바스크립트 엔진과 상호 연동하기 위해 사용하는 장치가 이벤트 루프이다.&lt;/p&gt;
 &lt;p&gt;이벤트 루프 기반의 비동기 방식으로 Non-blocking IO 를 지원한다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ea03d1bf-f1b4-4af7-a410-f34b069d403b/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;#x26;X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210615%2Fus-west-2%2Fs3%2Faws4_request&amp;#x26;X-Amz-Date=20210615T153851Z&amp;#x26;X-Amz-Expires=86400&amp;#x26;X-Amz-Signature=6eea485d4e83971cab596365e410b23e0a59b53ed83a4e288e0ed005aeb37504&amp;#x26;X-Amz-SignedHeaders=host&amp;#x26;response-content-disposition=filename%20%3D%22Untitled.png%22&quot; alt=&quot;https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ea03d1bf-f1b4-4af7-a410-f34b069d403b/Untitled.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 545px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/livedata-blog/static/5fbcae0bf15c13467f01eb72e0fecd3d/3ddad/eventloop-image.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 92.08333333333334%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsTAAALEwEAmpwYAAAECklEQVQ4y3WU+U9UVxTH5+/oT02T2tQm3WSpRJCwubAvESnEkJq2SVNjtE2tVm2otuhQKRU1FCLDPgzMMOwgBVkSYoJoAXWAKNvIDDPDNsxktrd9e+5lgNikZ3LfOe++ez/vnHO/b1Q+nw8etweOZTs2bOuwWVbgsNqxtrLK770eL9gar88PZiKNBYsVducWzHYHXAFhd56tVYkBEeb1ZbT/04v2iV48mZvA2PxTGJ90oWeqHxvuTQiChK1VB+aMjXjVqsNUYw2eaasxWVcJk64Ws9oqrJmmEJBkqCAD1x7+gX0lh/DJvQQcq85FXGU2PrwTiw9Ko2GY6OAZWEzP0BQfDkNSFLpzU9CaHksjDh05SagN24dJTRkkWqdi1yt9N/FucQQ+vZuAQ2WpOFyegYi/kvFRaSzqx/UcuPJyBl15qTASiEF6v/oc3V+cgDEjDobESMzoG3jZHPjz378jsiINKXX5iKnIQtz9E8hoOI2oinTUPd4Dtp1Mgj4lmnwiOvOz0JqTDD1lqTtyENNvAot4dgmak4guz0RiVR6ytF8iqjwdDeMGDrTOmtCefRyG5Gjue7/OReepDBjSYtCU8Bn1siZYMvXwQs91vHXzY7xXEomQ0iMIuXsU7/8ZhbeLQlEz1rQLbKHSdDEH0BQXRv0Mgy42FDqK6w/ux4t6TRBIeeonO5Gn+xb5TWdROHAbVx+ocUp3Bqebz/ETZ+ZYWsBo4VUMF/yIkV8uYuTaJR4PUzx4+Tzmh/rBBKSSJAmySGky/I7nscK9RJKRZRke0qGLJOamNV5a5pGUXe8WZLjouSiKlCGZQj9ZkehKseKn4eMxm2MmEdDr8fDY79qEw2LGht2KNetruNYdnEBvJvH7oFIUwikyXyw4R+Gcu0FDDdG7yOfYM4WAq043uibNMI69QsujaRgezUA7TNocNUE/NodZ6ybEQIABt2FywIateTX8PhcCfhfBh6AIDp4ps+cLKzhwsR5hP2mRpG7HsRutiP+1BYcLmvHOmUqU9U0wyh5QcJvgsdzHjnnmLyCwORS8kzH72s4hRwuNyC7pQlZxB9KK2pBxqx0RV3SoGzHx5vOS+RZZgXOhFF5bM7x2I8X3aA7BDBUOjP/NiNjrBmQWdyL9VgeS1W1IpJeEXNKiduRFEMj7tL1NFP1w2x7AtdIDWdr+d5GDFUwv2ZBAwOMEyLvTi5zb3cgkaCplydpQPfT8zQwFQcDysgVWmxP2VTcWF5fg9/t3WzBttiOqQM+zCacSwy83IpRiBtv/fS00g/8BMs90JAhMTwEE6MSY/nYOZc7iwA+1gzinGcD5qgF8V/2Q4n4ef1Peh+7xl1TOjg4VBf9rXFakU/oAoIh8096Qtj3TsCTyc/gXbLCccOQF0RUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/livedata-blog/static/5fbcae0bf15c13467f01eb72e0fecd3d/8ac56/eventloop-image.webp 240w,
+/livedata-blog/static/5fbcae0bf15c13467f01eb72e0fecd3d/d3be9/eventloop-image.webp 480w,
+/livedata-blog/static/5fbcae0bf15c13467f01eb72e0fecd3d/6305f/eventloop-image.webp 545w&quot;
+              sizes=&quot;(max-width: 545px) 100vw, 545px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/livedata-blog/static/5fbcae0bf15c13467f01eb72e0fecd3d/8ff5a/eventloop-image.png 240w,
+/livedata-blog/static/5fbcae0bf15c13467f01eb72e0fecd3d/e85cb/eventloop-image.png 480w,
+/livedata-blog/static/5fbcae0bf15c13467f01eb72e0fecd3d/3ddad/eventloop-image.png 545w&quot;
+            sizes=&quot;(max-width: 545px) 100vw, 545px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/livedata-blog/static/5fbcae0bf15c13467f01eb72e0fecd3d/3ddad/eventloop-image.png&quot;
+            alt=&quot;https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ea03d1bf-f1b4-4af7-a410-f34b069d403b/Untitled.png&quot;
+            title=&quot;https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ea03d1bf-f1b4-4af7-a410-f34b069d403b/Untitled.png&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;비동기를 호출하기 위해서는 Wep API 영역에 따로 정의되어 있다.&lt;/p&gt;
 &lt;p&gt;이벤트 루프와 태스크 큐와 같은 장치도 자바스크립트 엔진 외부에 구현되어 있음&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/673d163a-78f9-4836-aebb-6042f6ecd592/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;#x26;X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210615%2Fus-west-2%2Fs3%2Faws4_request&amp;#x26;X-Amz-Date=20210615T153922Z&amp;#x26;X-Amz-Expires=86400&amp;#x26;X-Amz-Signature=c18beb0dd58a730cf185740efc351531d865c0e2ab8cbfde8ece9fb2638d4e4b&amp;#x26;X-Amz-SignedHeaders=host&amp;#x26;response-content-disposition=filename%20%3D%22Untitled.png%22&quot; alt=&quot;https://s3-us-west-2.amazonaws.com/secure.notion-static.com/673d163a-78f9-4836-aebb-6042f6ecd592/Untitled.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/livedata-blog/static/2d1b7baf7b50521cdb9626df2c446fd5/0a47e/nodesystem-image.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 39.583333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABrUlEQVQoz02R646bMBSEeZZK22x3l0DANuAbBswlIUk3bHZbqVVVVer7P8L02L/6Y3Qs2R5/40nKssT/YowhyzK0bYt5nnE+X6K891jXM66XrxiGAUVRgHMeJYSAUirOpBs8pmnCOI40ZyzHI962N9zv79i2DcYYVFUNKSWUbCCVxuX6So+c0TQ17VVxBjOtNZLRWXo9mC2RYiL5+YTpuGJcTtBk2Pc9svyAL2kGVeboVA1Wy2jGuCDxCBNSJZOu44WBSDtr8Nop2CJFkz7iYir4zkG3Dscqx6/qM25sh614wK3c4d0b/F0dNitwWq/RIxEUZ7/fI89z7LMcix8wSwZflfjoFfrWomoaaF7AF08QRHUQNX6LB0yHRzy/vEAKRmYjETokTThM2UMBIcJIhh1RdV2PaV7gKAaTGt9lio3oSmXBSROZ31SBlDcxtiQfYyySuq5jY6HdvGS4e4srf8aQ7XDvmkjIKcVFpPjDP0FmT9CkjSJ/6yU+vIbjh0geDUPdgTK0GNS6Dg01WdPaUITw0a1zGI3EQGX8dCV+tCUW+nuvBHpJMiqesdbiH6I+EflISUf5AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/livedata-blog/static/2d1b7baf7b50521cdb9626df2c446fd5/8ac56/nodesystem-image.webp 240w,
+/livedata-blog/static/2d1b7baf7b50521cdb9626df2c446fd5/d3be9/nodesystem-image.webp 480w,
+/livedata-blog/static/2d1b7baf7b50521cdb9626df2c446fd5/e88ff/nodesystem-image.webp 600w&quot;
+              sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/livedata-blog/static/2d1b7baf7b50521cdb9626df2c446fd5/8ff5a/nodesystem-image.png 240w,
+/livedata-blog/static/2d1b7baf7b50521cdb9626df2c446fd5/e85cb/nodesystem-image.png 480w,
+/livedata-blog/static/2d1b7baf7b50521cdb9626df2c446fd5/0a47e/nodesystem-image.png 600w&quot;
+            sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/livedata-blog/static/2d1b7baf7b50521cdb9626df2c446fd5/0a47e/nodesystem-image.png&quot;
+            alt=&quot;https://s3-us-west-2.amazonaws.com/secure.notion-static.com/673d163a-78f9-4836-aebb-6042f6ecd592/Untitled.png&quot;
+            title=&quot;https://s3-us-west-2.amazonaws.com/secure.notion-static.com/673d163a-78f9-4836-aebb-6042f6ecd592/Untitled.png&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;노드 JS 에 LIBUS라는 라이브러리를 사용하여 이벤트 루프를 제공하고 있다.&lt;/p&gt;
 &lt;h3 id=&quot;테스크-큐와-이벤트-루프&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%85%8C%EC%8A%A4%ED%81%AC-%ED%81%90%EC%99%80-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A3%A8%ED%94%84&quot; aria-label=&quot;테스크 큐와 이벤트 루프 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;테스크 큐와 이벤트 루프&lt;/h3&gt;
 &lt;p&gt;태스크 큐는 말 그대로 콜백 함수들이 대기하는 큐(FIFO) 형태의 배열, 이벤트 루프는 호출 스택이 비워질 때마다 큐에서 골배함수를 꺼내와서 실행하는 역할을 해준다.&lt;/p&gt;
