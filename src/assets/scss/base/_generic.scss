@@ -174,7 +174,7 @@ figcaption {
 }
 
 .gatsby-highlight {
-  background-color: #f9f9f9;
+  background-color: #272822;
   border-radius: 0.3em;
   margin: 0.5em 0;
   padding: 1em;
@@ -182,13 +182,11 @@ figcaption {
   font-size: 0.9rem;
 }
 
-.gatsby-highlight pre[class*="language-"] {
-  background-color: transparent;
+.gatsby-highlight pre[class*='language-'] {
+  // background-color: transparent;
   margin: 0;
   padding: 0;
   overflow: initial;
   float: left; /* 1 */
   min-width: 100%; /* 2 */
 }
-
-// @import "~prismjs/themes/prism-twilight.css";
